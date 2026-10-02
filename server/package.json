@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "test:auth": "node tests/authTest.js"
+    "test:auth": "node tests/authUnitTests.js",
+    "test:orders": "node tests/orderUnitTests.js",
+    "test": "node tests/authUnitTests.js && node tests/orderUnitTests.js"
   },
   "keywords": [
     "mern",

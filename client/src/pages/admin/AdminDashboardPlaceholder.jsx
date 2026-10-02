@@ -61,18 +61,26 @@ const AdminDashboardPlaceholder = () => {
           </span>
         </div>
 
-        {/* Orders Module (Assigned to Collaborator 4 in Task 4) */}
-        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-          <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center">
+        {/* Orders Module (Task 4: Cart, Checkout & Order Processing) */}
+        <div className="bg-white p-6 rounded-2xl border border-purple-200 shadow-sm space-y-3 relative overflow-hidden">
+          <div className="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center">
             <LayoutDashboard className="w-5 h-5" />
           </div>
           <h3 className="font-bold text-slate-900">Orders Fulfillment</h3>
           <p className="text-xs text-slate-500">
-            Assigned to Task 4: View customer orders, review Cash on Delivery shipments, and update status.
+            Task 4 Implemented: View customer orders, review Cash on Delivery shipments, and update lifecycle status.
           </p>
-          <span className="inline-block px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 text-xs font-medium">
-            Pending Task 4 Implementation
-          </span>
+          <div className="pt-2 flex items-center justify-between">
+            <span className="inline-block px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 text-xs font-semibold">
+              ✓ Active
+            </span>
+            <Link
+              to="/admin/orders"
+              className="text-xs font-semibold text-purple-700 hover:text-purple-800 underline"
+            >
+              Open Orders →
+            </Link>
+          </div>
         </div>
       </div>
     </div>
